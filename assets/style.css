@@ -15,8 +15,8 @@ h1 {
 
 h2 {
     padding: 10px;
-    background-color: brown;
-    color: beige;
+    background-color: rgb(224, 166, 217);
+    color: rgb(0, 0, 0);
 }
 
 .dropdown {

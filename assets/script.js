@@ -36,4 +36,36 @@ function getApi() {
   
   fetchButton.addEventListener('click', getApi);
 
+  function getWAPI() {
+    // fetch request gets a list of all the repos for the node.js organization
+    var requestUrl = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current_weather=true'
   
+    fetch(requestUrl)
+      .then(function (response) { //first response 
+        return response.json();
+      })
+      .then(function (data) { //2nd  data
+        console.log(data)
+        //Loop over the data to generate a table, each table row will have a link to the repo url
+        // for (var i = 0; i < data.length; i++) {
+        //   // Creating elements, tablerow, tabledata, and anchor
+        //   var createTableRow = document.createElement('tr');
+        //   var tableData = document.createElement('td');
+        //   var link = document.createElement('a');
+  
+        //   // Setting the text of link and the href of the link
+        //   link.textContent = data[i].html_url;
+        //   link.href = data[i].html_url;
+  
+        //   // Appending the link to the tabledata and then appending the tabledata to the tablerow
+        //   // The tablerow then gets appended to the tablebody
+        //   tableData.appendChild(link);
+        //   createTableRow.appendChild(tableData);
+        //   tableBody.appendChild(createTableRow);
+        //   console.log(fetchButton)
+        // }
+      });
+  }
+  getWAPI();
+  fetchButton.addEventListener('click',getWAPI);
+ 
