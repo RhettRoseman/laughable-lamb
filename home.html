@@ -1,95 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup App</title>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
-
 <body>
-  <!-- JR -->
-  <h1>Makeup App </h1>
-  <button id="location" class="location">Location</button>
-  <p>This app is designed to assist you in selecting perfect makeup ideas for yourself.Our app is custom is ease the
-    process of selecting makeup that suits you best. Our app is designed to not only help you choose the perfect makeup,
-    but also to consider the location and atmosphere in order to find the ideal match for your surroundings
-   </p>
-<h3>  Let our app be your guide in choosing makeup that enhances your natural beauty!</h3>
+    <h1>Makeup App</h1>
+    <button id="location" class="location">Location</button>
+    <p>
+        This app is designed to assist you in selecting perfect makeup ideas for yourself. Our app is custom-made to ease
+        the process of selecting makeup that suits you best. It's designed not only to help you choose the perfect makeup
+        but also to consider the location and atmosphere to find the ideal match for your surroundings.
+    </p>
+    <h3>Let our app be your guide in choosing makeup that enhances your natural beauty!</h3>
+    <button id="start" class="start">Let's Get Started</button>
 
-  <button id="start" class="start">Let's Get Started</button>
-  <!-- JR dropdown menu -->
-  <h2>To assist you better , we would like to know your skin tone?</h2>
-<form id="userMakeup" >
-<select id="userSkinTone" class="form-select" aria-label="">
-  <option value="light">Light</option>
-  <option value="medium">Medium</option>
-  <option value="deep">Deep</option>
-  <option value="dark">Dark</option>
-</select>
- 
-<br>
+    <!-- Skin Tone Selection -->
+    <h2>To assist you better, we would like to know your skin tone?</h2>
+    <form id="userMakeup">
+        <select id="userSkinTone" class="form-select" aria-label="">
+            <option value="light">Light</option>
+            <option value="medium">Medium</option>
+            <option value="deep">Deep</option>
+            <option value="dark">Dark</option>
+        </select>
 
-<h2>Your choice of lipstick shade?</h2>
+        <!-- Lipstick Shade Selection -->
+        <h2>Your choice of lipstick shade?</h2>
+        <select id="userLipstick" class="form-select" aria-label="">
+            <option value="pink">Pink</option>
+            <option value="nude">Nude</option>
+            <option value="red">Red</option>
+        </select>
 
-<select id="userLipstick" class="form-select" aria-label="">
-  <option value="pink">pink</option>
-  <option value="nude">nude</option>
-  <option value="red">red</option>
-</select>
- 
+        <!-- Eyeshadow Color Preferences -->
+        <h2>When it comes to eyeshadow, what colors do you usually prefer?</h2>
+        <select id="userEyeshadow" class="form-select" aria-label="">
+            <option value="brown">Brown</option>
+            <option value="red">Red</option>
+            <option value="pink">Pink</option>
+            <option value="nude">Nude</option>
+        </select>
 
-  <h2>When it comes to eyeshadow, what colors do you usually prefer? </h2>
- 
-  <select id="userEyeshadow" class="form-select" aria-label="">
-  <option value="brown">brown</option>
-  <option value="red">red</option>
-  <option value="pink">pink</option>
-  <option value="nude">nude</option>
-</select>
- 
-<h2>Do you enjoy using mascara as a part of your makeup routine?</h2> 
- 
-  <select id="userMascara" class="form-select" aria-label="">
-<option value="yes">yes</option>
-<option value="no">no</option>
- </select>
+        <!-- Mascara Preference -->
+        <h2>Do you enjoy using mascara as a part of your makeup routine?</h2>
+        <select id="userMascara" class="form-select" aria-label="">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
 
+        <!-- Submit and Reset Buttons -->
+        <div id="Results"></div>
+        <button type="submit" form="userMakeup" id="submitBtn">Submit</button>
+        <button type="reset" form="userMakeup" id="resetBtn">Reset</button>
+    </form>
 
-<h2>What do you prefer to enhnce your features?</h2>
-<div id="bronzer"></div>
-<div id="Contour"></div>
-  <!-- <div class="dropdown"> -->
-  <!-- <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#favcolor">favcolor</a>
-    <a href="#skintone">skintone</a>
-    <a href="#lipstick">lipstick</a>
-    <a href="#eyeshadow">eyeshadow/a>
-  </div>
-  </div>
+    <!-- Key Findings Section -->
+    <h2>Throughout our inquiries, we gathered valuable insights into the preferences of our participants regarding makeup choices. Here are the key findings:</h2>
+    <ul id="userList"></ul>
 
-
-  <div id="favcolor" class="makeup"></div>
-  <div id="skintone" class="makeup"></div>
-  <div id="lipstick" class="makeup"></div>
-  <div id="eyeshadow" class="makeup"></div>
-
-
-  <div id="Results"></div> -->
-  <button type="submit" form="userMakeup" id="submitBtn">Submit</button>
-</form>
-
-<button id="resetBtn">Reset</button>
-
-
-  <h2> Throughtout our inquiries, we gathered valuable insights into the preferences of our participants regarding makeup choices. Here are the key findings:</h2>
-<ul id="userList">
-
-</ul>
-
-  <script src="./assets/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
-
 </html>
