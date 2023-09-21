@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #d9dcd6;
+background-image:url("/images/amy-shamblen-xwM61TPMlYk-unsplash\ \(1\).jpg");
 }
 
 h1 {
@@ -17,6 +17,7 @@ h2 {
     padding: 10px;
     background-color: rgb(224, 166, 217);
     color: rgb(0, 0, 0);
+
 }
 
 .dropdown {
