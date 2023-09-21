@@ -22,40 +22,42 @@
   <button id="start" class="start">Let's Get Started</button>
   <!-- JR dropdown menu -->
   <h2>To assist you better , we would like to know your skin tone?</h2>
-<form action="dropdown">
-<select id="" class="form-select" aria-label="">
+<form id="userMakeup" >
+<select id="userSkinTone" class="form-select" aria-label="">
   <option value="light">Light</option>
   <option value="medium">Medium</option>
   <option value="deep">Deep</option>
   <option value="dark">Dark</option>
 </select>
-</form>
+ 
 <br>
 
 <h2>Your choice of lipstick shade?</h2>
-<form action="dropdown">
-<select id="" class="form-select" aria-label="">
+
+<select id="userLipstick" class="form-select" aria-label="">
   <option value="pink">pink</option>
   <option value="nude">nude</option>
   <option value="red">red</option>
 </select>
-</form>
+ 
 
   <h2>When it comes to eyeshadow, what colors do you usually prefer? </h2>
-<form action="dropdown">
-  <select id="" class="form-select" aria-label="">
+ 
+  <select id="userEyeshadow" class="form-select" aria-label="">
   <option value="brown">brown</option>
   <option value="red">red</option>
   <option value="pink">pink</option>
   <option value="nude">nude</option>
 </select>
-</form>
+ 
 <h2>Do you enjoy using mascara as a part of your makeup routine?</h2> 
-<form action="dropdown">
-  <select id="" class="form-select" aria-label="">
+ 
+  <select id="userMascara" class="form-select" aria-label="">
 <option value="yes">yes</option>
 <option value="no">no</option>
-</form>
+ </select>
+
+
 <h2>What do you prefer to enhnce your features?</h2>
 <div id="bronzer"></div>
 <div id="Contour"></div>
@@ -77,10 +79,16 @@
 
 
   <div id="Results"></div> -->
+  <button type="submit" form="userMakeup" id="submitBtn">Submit</button>
+</form>
+
+<button id="resetBtn">Reset</button>
 
 
   <h2> Throughtout our inquiries, we gathered valuable insights into the preferences of our participants regarding makeup choices. Here are the key findings:</h2>
+<ul id="userList">
 
+</ul>
 
   <script src="./assets/script.js"></script>
 </body>
