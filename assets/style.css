@@ -1,0 +1,74 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+h1 {
+    padding: 10px;
+    background-color: black;
+    color: bisque;
+}
+
+h2 {
+    padding: 10px;
+    background-color: brown;
+    color: beige;
+}
+
+.dropdown {
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.dropdown-content a {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border: 5px solid grey;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dropbtn {
+    text-align: center;
+    margin: 20px;
+    background-color: red;
+    box-shadow: 5px 5px 10px 5px;
+
+}
+
+/* #favcolor {
+    background-color: red;
+}
+
+#skintone {
+    background-color: yellow;
+}
+
+#lipstick {
+    background-color: blue;
+}
+
+#eyeshadow:hover {
+    background-color: green;
+}
+
+/* #results {
+    background-color: aqua;
+
+}
+ */
