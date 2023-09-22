@@ -12,6 +12,7 @@ h1 {
     padding: 10px;
     background-color: rgb(255, 255, 255);
     color: rgb(229, 142, 239); /* changed color JR */
+    text-align: center;
 }
 
 h2 {
@@ -69,22 +70,4 @@ h2 {
 
 }
 
-/*
 
-#skintone {
-    background-color: yellow;
-}
-
-#lipstick {
-    background-color: blue;
-}
-
-#eyeshadow:hover {
-    background-color: green;
-}
-
-/* #results {
-    background-color: aqua;
-
-}
- */
