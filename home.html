@@ -49,18 +49,23 @@
   <option value="pink">pink</option>
   <option value="nude">nude</option>
 </select>
+
+
  
 <h2>Do you enjoy using mascara as a part of your makeup routine?</h2> 
  
   <select id="userMascara" class="form-select" aria-label="">
+    
 <option value="yes">yes</option>
 <option value="no">no</option>
  </select>
 
 
 <h2>What do you prefer to enhnce your features?</h2>
-<div id="bronzer"></div>
-<div id="Contour"></div>
+<select id="userFeatures" class="form-select">
+<option value="bronzer">Bronzer</option>
+<option value="contour">Contour</option>
+</select>
   <!-- <div class="dropdown"> -->
   <!-- <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
@@ -79,7 +84,7 @@
 
 
   <div id="Results"></div> -->
-  <button type="submit" form="userMakeup" id="submitBtn">Submit</button>
+  <br><button type="submit" form="userMakeup" id="submitBtn">Submit</button>
 </form>
 
 <button id="resetBtn">Reset</button>
@@ -89,6 +94,12 @@
 <ul id="userList">
 
 </ul>
+<div class="col-12 col-md-9 p-3 text-light">
+  <h2>Showing results for <span id="result-text"></span></h2>
+  <div id="result-content"></div>
+</div>
+</div>
+<!-- <table id="repo-table"></table> -->
 
   <script src="./assets/script.js"></script>
 </body>

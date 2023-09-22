@@ -4,6 +4,8 @@
 }
 
 body {
+   
+    /* background-image: url("../images/111.jpg"); */
     background-color: #d9dcd6;
 }
 
@@ -12,6 +14,10 @@ h1 {
     background-color: black;
     color: bisque;
 }
+/* 
+body{
+    background-image: url("BACKUPdata.png");
+} */
 
 h2 {
     padding: 10px;
