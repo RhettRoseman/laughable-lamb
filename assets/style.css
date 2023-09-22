@@ -16,7 +16,8 @@ h1 {
 
 h2 {
     padding: 10px;
-    background-color:rgb(229, 142, 239); /* changed color JR*/
+    background-color: rgba(255, 192, 197, 0.5);
+    /* background-color:rgb(229, 142, 239); changed color JR */
     color: rgb(255, 255, 255);
 }
 
@@ -33,15 +34,20 @@ h2 {
     justify-content: center;
 
 }
-#userMakeup {
-    background-image: url(../images/makeup1.jpg); /*changed to image*/
+/* #userMakeup {
+    /* background-image: url(../images/makeup1.jpg); /*changed to image
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-color: rgb(229, 142, 239);  /*changed color JR
+    width: 100%; }*/
+
+#makeupDiv{
+    background-image: url(../images/makeup1.jpg); /*changed to image JR MB SH*/
     background-repeat: no-repeat;
     background-position: left ;
     background-color: rgb(229, 142, 239); /* changed color JR*/
     width: 100%;
-
 }
-
 .dropdown-content a {
     display: flex;
     height: 50px;
@@ -63,9 +69,7 @@ h2 {
 
 }
 
-/* #favcolor {
-    background-color: red;
-}
+/*
 
 #skintone {
     background-color: yellow;
