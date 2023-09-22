@@ -1,6 +1,6 @@
 * {
-    
-    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box; /* added SH*/
 
 }
 
@@ -22,15 +22,19 @@ h2 {
     color: rgb(255, 255, 255);
 }
 
-.dropdown {
+.location {
     display: inline-block;
+    height: 30px;
+    width: 100px;
+    border: 2px solid black;
     text-align: center;
     color: rgb(229, 142, 239);
 }
 
 
 .dropdown-content {
-    display: flex;
+    display: flex; /* added SH*/
+    
     text-align: center;
     justify-content: center;
 
@@ -42,6 +46,12 @@ h2 {
     background-color: rgb(229, 142, 239);  /*changed color JR
     width: 100%; }*/
 
+#headerDiv{
+    background-image: url(../images/makeup5.jpg); /*changed header to have background image SH*/
+    background-position: left;
+    width: 100%;
+}
+
 #makeupDiv{
     background-image: url(../images/makeup1.jpg); /*changed to image JR MB SH*/
     background-repeat: no-repeat;
@@ -49,30 +59,33 @@ h2 {
     background-color: rgb(229, 142, 239); /* changed color JR*/
     width: 100%;
 }
-.dropdown-content a {
+.form-select {
     display: flex;
-    height: 50px;
-    width: 200px;
-    font-size: 20px;
+    height: 30px;
+    width: 100px;
     border: 5px solid rgb(0, 0, 0); /*changed color JR*/
     margin: 15px;
     align-items: center;
     justify-content: center;
+    margin: 5px 5px 15px 5px; /*add margin*/
     
 
 }
 
-.dropbtn {
-    text-align: center;
-    margin: 20px;
-    background-color: red;
+.start {
+    text-align: center; /* added SH*/
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(229, 142, 239);
+    
     box-shadow: 5px 5px 10px 5px;
+    
 
 }
 
-.form-select {
+/* .form-select {
     margin: 5px 5px 15px 5px;
-}
+} */
 
 /* #favcolor {
     background-color: red;
