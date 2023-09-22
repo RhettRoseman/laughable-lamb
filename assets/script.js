@@ -104,11 +104,7 @@ const listBuilder = (text) => {
   item.innerHTML = text + ' <button onclick="deleteNote(this)">x</button>';
   userList.appendChild(item);
 };
-
-const getChoices = JSON.parse(localStorage.getItem("userList"));
-getChoices.forEach((item) => {
-  listBuilder(item);
-});
+//commented 
 
 // resetButton.addEventListener('click', 
 // notes.innerHTML="";
