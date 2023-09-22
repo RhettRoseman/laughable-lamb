@@ -1,40 +1,42 @@
+//Created by MB 
+
 var tableBody = document.getElementById('repo-table');
 var fetchButton = document.getElementById('fetch-button');
 
-// function getApi() {
-//     // fetch request gets a list of all the repos for the node.js organization
-//     var requestUrl = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
+function getApi() {
+    // fetch request gets a list of all the repos for the node.js organization
+    var requestUrl = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
   
-//     fetch(requestUrl)
-//       .then(function (response) { //first response 
-//         return response.json();
-//       })
-//       .then(function (data) { //2nd  data
-//         console.log(data)
-        //Loop over the data to generate a table, each table row will have a link to the repo url
-        // for (var i = 0; i < data.length; i++) {
-        //   // Creating elements, tablerow, tabledata, and anchor
-        //   var createTableRow = document.createElement('tr');
-        //   var tableData = document.createElement('td');
-        //   var link = document.createElement('a');
+    fetch(requestUrl)
+      .then(function (response) { //first response 
+        return response.json();
+      })
+      .then(function (data) { //2nd  data
+        console.log(data)
+        // Loop over the data to generate a table, each table row will have a link to the repo url
+        for (var i = 0; i < data.length; i++) {
+          // Creating elements, tablerow, tabledata, and anchor
+          var createTableRow = document;
+          var tableData = document.createElement('td');
+          var link = document.createElement('a');
   
-        //   // Setting the text of link and the href of the link
-        //   link.textContent = data[i].html_url;
-        //   link.href = data[i].html_url;
+          // Setting the text of link and the href of the link
+          link.textContent = data[i].html_url;
+          link.href = data[i].html_url;
   
-        //   // Appending the link to the tabledata and then appending the tabledata to the tablerow
-        //   // The tablerow then gets appended to the tablebody
-        //   tableData.appendChild(link);
-        //   createTableRow.appendChild(tableData);
-        //   tableBody.appendChild(createTableRow);
-        //   console.log(fetchButton)
-        // }
-    //  });
-  // }
+          // Appending the link to the tabledata and then appending the tabledata to the tablerow
+          // The tablerow then gets appended to the tablebody
+          tableData.appendChild(link);
+          createTableRow.appendChild(tableData);
+          tableBody.appendChild(createTableRow);
+          console.log(fetchButton)
+        }
+     });
+  }
 
-  // getApi();
+  getApi();
   
-  // fetchButton.addEventListener('click', getApi);
+  fetchButton.addEventListener('click', getApi);
 
   
   const form = document.querySelector('form');
@@ -85,12 +87,13 @@ const userList = document.getElementById("userList");
 let userStorage = localStorage.getItem("userList")
   ? JSON.parse(localStorage.getItem("userList"))
   : [];
-
+//results page MB
 umakeupForm.addEventListener("submit", (e) => {
   e.preventDefault();
   userStorage.push(skinToneInput.value);
   userStorage.push(lipstickInput.value);
   userStorage.push(eyeshadowInput.value);
+
   //notesStorage.push(noteInput.value);
   localStorage.setItem("userList", JSON.stringify(userStorage));
   listBuilder(skinToneInput.value);
