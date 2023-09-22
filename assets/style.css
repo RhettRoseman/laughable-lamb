@@ -1,45 +1,63 @@
 * {
     
     box-sizing: border-box;
+
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: #efe6e6;
 }
 
 h1 {
     padding: 10px;
-    background-color: black;
-    color: bisque;
+    background-color: rgb(255, 255, 255);
+    color: rgb(229, 142, 239); /* changed color JR */
 }
 
 h2 {
     padding: 10px;
-    background-color: brown;
-    color: beige;
+    background-color: rgba(255, 192, 197, 0.5);
+    /* background-color:rgb(229, 142, 239); changed color JR */
+    color: rgb(255, 255, 255);
 }
 
 .dropdown {
     display: inline-block;
     text-align: center;
+    color: rgb(229, 142, 239);
 }
+
 
 .dropdown-content {
     display: flex;
     text-align: center;
     justify-content: center;
-    
-}
 
+}
+/* #userMakeup {
+    /* background-image: url(../images/makeup1.jpg); /*changed to image
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-color: rgb(229, 142, 239);  /*changed color JR
+    width: 100%; }*/
+
+#makeupDiv{
+    background-image: url(../images/makeup1.jpg); /*changed to image JR MB SH*/
+    background-repeat: no-repeat;
+    background-position: left ;
+    background-color: rgb(229, 142, 239); /* changed color JR*/
+    width: 100%;
+}
 .dropdown-content a {
     display: flex;
     height: 50px;
     width: 200px;
     font-size: 20px;
-    border: 5px solid grey;
+    border: 5px solid rgb(0, 0, 0); /*changed color JR*/
     margin: 15px;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -51,9 +69,7 @@ h2 {
 
 }
 
-/* #favcolor {
-    background-color: red;
-}
+/*
 
 #skintone {
     background-color: yellow;
